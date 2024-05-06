@@ -3,3 +3,21 @@ bootstrap: master-39613-3bc70b2db9b
 system: 41660
 date: Mon May  6 10:18:02 PM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit a01c443fbb18cd2a8c71d38516b4d4de14bf54fd
++ bazel build //src:bazel --compilation_mode=opt
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+Computing main repo mapping:
+Computing main repo mapping:
+Computing main repo mapping:
+ERROR: For repository 'platforms', the root module requires module version platforms@0.0.8, but got platforms@0.0.9 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'rules_java', the root module requires module version rules_java@7.4.0, but got rules_java@7.5.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: Error computing the main repository mapping: Direct dependency check failed.
+++ failnote
+++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1[failed]/'\'''
+++ git notes --ref build edit a01c443fbb18cd2a8c71d38516b4d4de14bf54fd
+++ tail -n 31 /home/rschiele/bazel/.build.log
+++ head -n 31
+++ git notes --ref build append --no-separator -m FAILED: -F - a01c443fbb18cd2a8c71d38516b4d4de14bf54fd
