@@ -21,3 +21,5 @@ ERROR: Error computing the main repository mapping: Direct dependency check fail
 ++ tail -n 31 /home/rschiele/bazel/.build.log
 ++ head -n 31
 ++ git notes --ref build append --no-separator -m FAILED: -F - a01c443fbb18cd2a8c71d38516b4d4de14bf54fd
+======================================================================
+BUILD: 7.1.1-3-ga01c443fbb1
