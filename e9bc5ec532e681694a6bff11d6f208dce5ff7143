@@ -11,3 +11,5 @@ Computing main repo mapping:
 ERROR: For repository 'platforms', the root module requires module version platforms@0.0.8, but got platforms@0.0.9 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
 ERROR: For repository 'rules_java', the root module requires module version rules_java@7.4.0, but got rules_java@7.5.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
 ERROR: Error computing the main repository mapping: Direct dependency check failed.
+======================================================================
+BUILD: 7.1.1
