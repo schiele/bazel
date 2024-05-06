@@ -2,4 +2,4 @@ BUILD: root-39255-g74c8ca4886c
 bootstrap: root-39616-g8a81b81eff9
 system: 41660
 date: Tue May  7 12:31:20 AM CEST 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
