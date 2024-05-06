@@ -3,3 +3,10 @@ bootstrap: root-39616-g8a81b81eff9
 system: 41660
 date: Tue May  7 12:31:00 AM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit 186cd62d03fabd600745f65e88df084dcab003d7
++ bazel build //src:bazel --compilation_mode=opt
+Computing main repo mapping:
+ERROR: For repository 'platforms', the root module requires module version platforms@0.0.8, but got platforms@0.0.9 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: Error computing the main repository mapping: Direct dependency check failed.
