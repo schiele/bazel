@@ -9,4 +9,4 @@ BUILD: 7.1.2rc1-3-g6975994dbe1
 bootstrap: root-39614-g9a3e331e656
 system: 41660
 date: Mon May  6 10:54:50 PM CEST 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
