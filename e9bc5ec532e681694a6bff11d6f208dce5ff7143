@@ -13,3 +13,7 @@ ERROR: For repository 'rules_java', the root module requires module version rule
 ERROR: Error computing the main repository mapping: Direct dependency check failed.
 ======================================================================
 BUILD: 7.1.1
+bootstrap: 7.1.1-3-gfe79d4ed0ea
+system: 41660
+date: Tue May  7 12:34:58 AM CEST 2024
+tasks:[incomplete]
