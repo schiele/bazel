@@ -3,3 +3,11 @@ bootstrap: root-39650-gc7c33b13300
 system: 41680
 date: Thu May  9 09:47:12 PM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit a82541b93897216ec9c0ab48eaa8fd95c2995864
++ /home/rschiele/tools/bazel/root-39650-gc7c33b13300/bazel build //src:bazel --compilation_mode=opt
+Computing main repo mapping:
+ERROR: For repository 'platforms', the root module requires module version platforms@0.0.8, but got platforms@0.0.9 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'rules_java', the root module requires module version rules_java@7.4.0, but got rules_java@7.5.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: Error computing the main repository mapping: Direct dependency check failed.
