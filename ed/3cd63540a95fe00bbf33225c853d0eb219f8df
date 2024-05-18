@@ -35,3 +35,29 @@ bootstrap: 7.1.2-2-g89df9804162
 system: 41720
 date: Sat May 18 10:35:17 AM CEST 2024
 tasks: build[failed]
+FAILED:
+[1 / 1] checking cached actions
+DEBUG: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_jvm_external~/coursier.bzl:721:18: Found duplicate artifact versions
+    com.google.code.gson:gson has multiple versions 2.9.0, 2.8.9
+    com.google.errorprone:error_prone_annotations has multiple versions 2.23.0, 2.3.2
+    com.google.guava:guava has multiple versions 33.0.0-jre, 31.1-jre
+    com.google.guava:guava-testlib has multiple versions 33.0.0-jre, 31.1-jre
+    com.google.truth:truth has multiple versions 1.4.0, 1.1.2
+    org.mockito:mockito-core has multiple versions 5.4.0, 4.3.1
+Please remove duplicate artifacts from the artifact list so you do not get unexpected artifact versions
+Analyzing: target //src:bazel (446 packages loaded, 222674 targets configured)
+[1 / 1] checking cached actions
+Analyzing: target //src:bazel (481 packages loaded, 224506 targets configured)
+[1 / 1] checking cached actions
+INFO: Analyzed target //src:bazel (484 packages loaded, 225776 targets configured).
+[1 / 57] [Prepa] Writing file src/embedded_tools_jdk_minimal.params
+[390 / 3,420] Creating source manifest for //src/main/java/com/google/devtools/build/lib/bazel:BazelServer; 0s local
+ERROR: /home/rschiele/bazel/src/main/java/com/google/devtools/build/lib/bazel/BUILD:216:12: Middleman _middlemen/src_Smain_Sjava_Scom_Sgoogle_Sdevtools_Sbuild_Slib_Sbazel_SBazelServer-runfiles failed: error reading file '@@rules_java~~toolchains~local_jdk//:bin/augenrules': /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java~~toolchains~local_jdk/bin/augenrules (Permission denied)
+ERROR: /home/rschiele/bazel/src/main/java/com/google/devtools/build/lib/bazel/BUILD:216:12: Middleman _middlemen/src_Smain_Sjava_Scom_Sgoogle_Sdevtools_Sbuild_Slib_Sbazel_SBazelServer-runfiles failed: 1 input file(s) are in error
+[391 / 3,420] checking cached actions
+Target //src:bazel failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+ERROR: /home/rschiele/bazel/src/main/java/com/google/devtools/build/lib/bazel/BUILD:216:12 Middleman _middlemen/src_Smain_Sjava_Scom_Sgoogle_Sdevtools_Sbuild_Slib_Sbazel_SBazelServer-runfiles failed: 1 input file(s) are in error
+INFO: Elapsed time: 21.847s, Critical Path: 2.02s
+INFO: 124 processes: 14 internal, 110 linux-sandbox.
+ERROR: Build did NOT complete successfully
