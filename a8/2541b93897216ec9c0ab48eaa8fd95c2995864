@@ -34,3 +34,29 @@ bootstrap: 7.1.2-3-g15ecf201608
 system: 41720
 date: Sat May 18 08:37:39 AM CEST 2024
 tasks: build[failed]
+FAILED:
+Analyzing: target //src:bazel (482 packages loaded, 224586 targets configured)
+[1 / 1] checking cached actions
+Analyzing: target //src:bazel (483 packages loaded, 224706 targets configured)
+[1 / 1] checking cached actions
+Analyzing: target //src:bazel (483 packages loaded, 224706 targets configured)
+[1 / 1] checking cached actions
+Analyzing: target //src:bazel (483 packages loaded, 224706 targets configured)
+[1 / 1] checking cached actions
+Analyzing: target //src:bazel (483 packages loaded, 224706 targets configured)
+[1 / 1] checking cached actions
+INFO: Analyzed target //src:bazel (484 packages loaded, 225761 targets configured).
+[2 / 67] [Prepa] Writing file rules_java-srcs.manifest
+INFO: From Writing: bazel-out/k8-opt/bin/platforms-srcs.tar:
+/tmp/bazel-working-directory/_main/bazel-out/k8-opt-exec-ST-fad1763555eb/bin/external/rules_pkg~/pkg/private/tar/build_tar.runfiles/_main/../rules_pkg~/pkg/private/tar/build_tar.py:29: SyntaxWarning: invalid escape sequence '\ '
+  """Normalize a path to the format we need it.
+[220 / 3,377] Creating source manifest for //src/main/java/com/google/devtools/build/lib/bazel:BazelServer; 0s local
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java~/toolchains/BUILD:93:19: Executing genrule @@rules_java~//toolchains:gen_include/linux/jni_md.h failed: error reading file '@@rules_java~~toolchains~local_jdk//:bin/augenrules': /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java~~toolchains~local_jdk/bin/augenrules (Permission denied)
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java~/toolchains/BUILD:93:19: Executing genrule @@rules_java~//toolchains:gen_include/linux/jni_md.h failed: 1 input file(s) are in error
+[221 / 3,377] checking cached actions
+Target //src:bazel failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java~/toolchains/BUILD:93:19 Executing genrule @@rules_java~//toolchains:gen_include/linux/jni_md.h failed: 1 input file(s) are in error
+INFO: Elapsed time: 23.666s, Critical Path: 1.89s
+INFO: 167 processes: 40 internal, 127 linux-sandbox.
+ERROR: Build did NOT complete successfully
