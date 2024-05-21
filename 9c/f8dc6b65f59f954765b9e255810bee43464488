@@ -3,3 +3,15 @@ bootstrap: root-39745-g83bded5d245
 system: 41750
 date: Tue May 21 07:08:53 PM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit 9cf8dc6b65f59f954765b9e255810bee43464488
++ /home/rschiele/tools/bazel/root-39745-g83bded5d245/bazel build //src:bazel --compilation_mode=opt
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+Computing main repo mapping:
+Computing main repo mapping:
+Computing main repo mapping:
+ERROR: For repository 'bazel_skylib', the root module requires module version bazel_skylib@1.5.0, but got bazel_skylib@1.6.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'rules_java', the root module requires module version rules_java@7.5.0, but got rules_java@7.6.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: Error computing the main repository mapping: Direct dependency check failed.
