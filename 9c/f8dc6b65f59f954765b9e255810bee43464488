@@ -20,4 +20,4 @@ BUILD: root-39714-g9cf8dc6b65f
 bootstrap: 7.2.0rc1-11-gd31ce86fe8a
 system: 41750
 date: Tue May 21 07:09:45 PM CEST 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
