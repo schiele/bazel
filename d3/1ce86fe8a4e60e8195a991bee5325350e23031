@@ -13,3 +13,5 @@ Computing main repo mapping:
 ERROR: For repository 'bazel_skylib', the root module requires module version bazel_skylib@1.5.0, but got bazel_skylib@1.6.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
 ERROR: For repository 'rules_java', the root module requires module version rules_java@7.5.0, but got rules_java@7.6.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
 ERROR: Error computing the main repository mapping: Direct dependency check failed.
+======================================================================
+BUILD: 7.2.0rc1-11-gd31ce86fe8a
