@@ -18,4 +18,4 @@ BUILD: 7.2.0rc1-11-gd31ce86fe8a
 bootstrap: 7.2.0rc1-9-gca9c7535314
 system: 41720
 date: Tue May 21 05:57:02 AM CEST 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
