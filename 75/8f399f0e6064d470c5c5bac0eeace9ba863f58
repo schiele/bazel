@@ -2,4 +2,4 @@ BUILD: root-39767-g758f399f0e6
 bootstrap: root-39758-gc186760e0e5
 system: 41750
 date: Wed May 22 01:30:33 PM CEST 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
