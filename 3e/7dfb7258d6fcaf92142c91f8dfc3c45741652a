@@ -16,3 +16,7 @@ ERROR: For repository 'buildozer', the root module requires module version build
 ERROR: Error computing the main repository mapping: Direct dependency check failed.
 ======================================================================
 BUILD: root-39779-g3e7dfb7258d
+bootstrap: 7.2.0rc2
+system: 41780
+date: Mon Jun  3 12:31:56 PM CEST 2024
+tasks:[incomplete]
