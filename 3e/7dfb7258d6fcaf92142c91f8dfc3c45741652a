@@ -3,3 +3,14 @@ bootstrap: root-39820-gc4c9ea6fd69
 system: 41780
 date: Mon Jun  3 12:31:02 PM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit 3e7dfb7258d6fcaf92142c91f8dfc3c45741652a
++ /home/rschiele/tools/bazel/root-39820-gc4c9ea6fd69/bazel build //src:bazel --compilation_mode=opt
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+Computing main repo mapping:
+Computing main repo mapping:
+Computing main repo mapping:
+ERROR: For repository 'buildozer', the root module requires module version buildozer@7.1.1.1, but got buildozer@7.1.2 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: Error computing the main repository mapping: Direct dependency check failed.
