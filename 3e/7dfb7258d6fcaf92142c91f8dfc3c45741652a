@@ -31,3 +31,5 @@ Computing main repo mapping:
 Computing main repo mapping:
 ERROR: For repository 'buildozer', the root module requires module version buildozer@7.1.1.1, but got buildozer@7.1.2 in the resolved dependency graph.
 ERROR: Error computing the main repository mapping: Direct dependency check failed.
+======================================================================
+BUILD: root-39779-g3e7dfb7258d
