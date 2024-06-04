@@ -20,3 +20,15 @@ bootstrap: 7.2.0rc2-1-g691cb87a336
 system: 41780
 date: Tue Jun  4 05:54:47 PM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit 415a1f0a4b3f81fcfea659c2bbe31f10e5d626e1
++ /home/rschiele/tools/bazel/7.2.0rc2-1-g691cb87a336/bazel build //src:bazel --compilation_mode=opt
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+Computing main repo mapping:
+Computing main repo mapping:
+Computing main repo mapping:
+ERROR: For repository 'rules_java', the root module requires module version rules_java@7.6.0, but got rules_java@7.6.1 in the resolved dependency graph.
+ERROR: For repository 'buildozer', the root module requires module version buildozer@7.1.1.1, but got buildozer@7.1.2 in the resolved dependency graph.
+ERROR: Error computing the main repository mapping: Direct dependency check failed.
