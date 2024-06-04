@@ -14,3 +14,5 @@ Computing main repo mapping:
 ERROR: For repository 'rules_java', the root module requires module version rules_java@7.6.0, but got rules_java@7.6.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
 ERROR: For repository 'buildozer', the root module requires module version buildozer@7.1.1.1, but got buildozer@7.1.2 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
 ERROR: Error computing the main repository mapping: Direct dependency check failed.
+======================================================================
+BUILD: 8.0.0-pre.20240516.1
