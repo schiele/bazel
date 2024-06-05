@@ -2,4 +2,4 @@ BUILD: 7.2.0rc2-3-gdbdf44a4010
 bootstrap: 7.2.0rc2-1-g691cb87a336
 system: 41780
 date: Wed Jun  5 07:47:44 AM CEST 2024
-tasks: build install[incomplete]
+tasks: build install
