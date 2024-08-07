@@ -3,3 +3,29 @@ bootstrap: root-40089-gdd48c1a7665
 system: 42110
 date: Wed Aug  7 08:49:22 PM CEST 2024
 tasks: build[failed]
+FAILED:
+    com.google.code.gson:gson has multiple versions 2.10.1, 2.8.9
+    com.google.errorprone:error_prone_annotations has multiple versions 2.23.0, 2.3.2
+    com.google.guava:guava has multiple versions 33.0.0-jre, 31.1-jre
+    com.google.guava:guava-testlib has multiple versions 33.0.0-jre, 31.1-jre
+    com.google.truth:truth has multiple versions 1.4.0, 1.1.2
+    org.mockito:mockito-core has multiple versions 5.4.0, 4.3.1
+Please remove duplicate artifacts from the artifact list so you do not get unexpected artifact versions
+Analyzing: target //src:bazel (401 packages loaded, 9713 targets configured)
+[1 / 1] checking cached actions
+Analyzing: target //src:bazel (495 packages loaded, 10443 targets configured)
+[1 / 1] checking cached actions
+Analyzing: target //src:bazel (500 packages loaded, 10957 targets configured)
+[1 / 1] checking cached actions
+Analyzing: target //src:bazel (502 packages loaded, 11614 targets configured)
+[1 / 1] checking cached actions
+INFO: Analyzed target //src:bazel (502 packages loaded, 11614 targets configured).
+ERROR: /home/rschiele/bazel/src/main/cpp/util/BUILD:34:11: Compiling src/main/cpp/util/path_posix.cc failed: (Exit 1): gcc failed: error executing CppCompile command (from target //src/main/cpp/util:filesystem) /usr/lib64/ccache/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG ... (remaining 22 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+src/main/tools/linux-sandbox-pid1.cc:498: "execvp(/usr/lib64/ccache/bin/gcc, 0x55e6bbe4d280)": No such file or directory
+Target //src:bazel failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 13.808s, Critical Path: 0.10s
+INFO: 13 processes: 12 internal, 1 linux-sandbox.
+ERROR: Build did NOT complete successfully
