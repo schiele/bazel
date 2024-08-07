@@ -3,3 +3,27 @@ bootstrap: root-40089-gdd48c1a7665
 system: 42110
 date: Wed Aug  7 08:54:45 PM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit 6efef62a47833c346a342ecf48165f94f7b807c4
++ /home/rschiele/tools/bazel/root-40089-gdd48c1a7665/bazel build //src:bazel --compilation_mode=opt
+Computing main repo mapping:
+Loading:
+Loading: 0 packages loaded
+Analyzing: target //src:bazel (0 packages loaded, 0 targets configured)
+Analyzing: target //src:bazel (0 packages loaded, 0 targets configured)
+[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+DEBUG: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_jvm_external~/private/extensions/maven.bzl:146:14: The maven repository 'maven' is used in two different bazel modules, originally in 'bazel' and now in 'protobuf'
+DEBUG: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_jvm_external~/private/extensions/maven.bzl:146:14: The maven repository 'maven' is used in two different bazel modules, originally in 'bazel' and now in 'protobuf'
+Analyzing: target //src:bazel (37 packages loaded, 3372 targets configured)
+[1 / 1] checking cached actions
+INFO: Analyzed target //src:bazel (37 packages loaded, 3941 targets configured).
+ERROR: /home/rschiele/bazel/src/main/cpp/util/BUILD:34:11: Compiling src/main/cpp/util/path_posix.cc failed: (Exit 1): gcc failed: error executing CppCompile command (from target //src/main/cpp/util:filesystem) /usr/lib64/ccache/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG ... (remaining 22 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+src/main/tools/linux-sandbox-pid1.cc:498: "execvp(/usr/lib64/ccache/bin/gcc, 0x562bbc7f3280)": No such file or directory
+Target //src:bazel failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 2.685s, Critical Path: 0.03s
+INFO: 9 processes: 7 internal, 2 linux-sandbox.
+ERROR: Build did NOT complete successfully
