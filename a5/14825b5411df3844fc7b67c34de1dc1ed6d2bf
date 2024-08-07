@@ -29,3 +29,5 @@ Use --verbose_failures to see the command lines of failed build steps.
 INFO: Elapsed time: 13.808s, Critical Path: 0.10s
 INFO: 13 processes: 12 internal, 1 linux-sandbox.
 ERROR: Build did NOT complete successfully
+======================================================================
+BUILD: root-40374-ga514825b541
