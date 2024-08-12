@@ -2,4 +2,4 @@ BUILD: root-40435-gf34d8c92547
 bootstrap: root-40402-gdb4c550691d
 system: 42150
 date: Mon Aug 12 09:09:10 PM CEST 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
