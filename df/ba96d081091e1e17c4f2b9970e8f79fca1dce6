@@ -2,4 +2,4 @@ BUILD: root-40977-gdfba96d0810
 bootstrap: root-40973-g38239d9d71e
 system: 42410
 date: Sat Sep 28 05:28:16 AM CEST 2024
-tasks: build install[incomplete]
+tasks: build install
