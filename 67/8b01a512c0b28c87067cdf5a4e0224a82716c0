@@ -35,3 +35,12 @@ bootstrap: 7.2.0
 system: 42440
 date: Sun Oct  6 02:05:58 PM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit 678b01a512c0b28c87067cdf5a4e0224a82716c0
++ /home/rschiele/tools/bazel/7.2.0/bazel build //src:bazel --compilation_mode=opt
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+INFO: Reading rc options for 'build' from /home/rschiele/bazel/.bazelrc:
+  Inherited 'common' options: --enable_platform_specific_config --incompatible_use_plus_in_repo_names --experimental_google_legacy_api --experimental_rule_extension_api --check_direct_dependencies=error --experimental_downloader_config=bazel_downloader.cfg --noenable_workspace --incompatible_disallow_empty_glob
+ERROR: --incompatible_use_plus_in_repo_names :: Unrecognized option: --incompatible_use_plus_in_repo_names
