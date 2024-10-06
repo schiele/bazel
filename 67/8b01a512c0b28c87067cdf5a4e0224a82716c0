@@ -44,3 +44,5 @@ Starting local Bazel server and connecting to it...
 INFO: Reading rc options for 'build' from /home/rschiele/bazel/.bazelrc:
   Inherited 'common' options: --enable_platform_specific_config --incompatible_use_plus_in_repo_names --experimental_google_legacy_api --experimental_rule_extension_api --check_direct_dependencies=error --experimental_downloader_config=bazel_downloader.cfg --noenable_workspace --incompatible_disallow_empty_glob
 ERROR: --incompatible_use_plus_in_repo_names :: Unrecognized option: --incompatible_use_plus_in_repo_names
+======================================================================
+BUILD: root-41094-g678b01a512c
