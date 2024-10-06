@@ -77,3 +77,29 @@ bootstrap: root-41078-g5632043a426
 system: 42440
 date: Sun Oct  6 02:06:58 PM CEST 2024
 tasks: build[failed]
+FAILED:
+Starting local Bazel server and connecting to it...
+Computing main repo mapping:
+Computing main repo mapping:
+Loading:
+Loading: 0 packages loaded
+Analyzing: target //src:bazel (1 packages loaded, 0 targets configured)
+Analyzing: target //src:bazel (1 packages loaded, 0 targets configured)
+
+Analyzing: target //src:bazel (135 packages loaded, 555 targets configured)
+
+Analyzing: target //src:bazel (136 packages loaded, 559 targets configured)
+
+ERROR: Traceback (most recent call last):
+	File "/home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/protobuf+/src/google/protobuf/BUILD.bazel", line 188, column 15, in <toplevel>
+		staleness_test(
+	File "/home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/protobuf+/upb/cmake/build_defs.bzl", line 49, column 11, in staleness_test
+		native.py_test(
+Error: no native function or rule 'py_test'
+Available attributes: action_listener, alias, available_xcodes, cc_binary, cc_import, cc_libc_top_alias, cc_library, cc_proto_library, cc_shared_library, cc_static_library, cc_test, cc_toolchain, cc_toolchain_alias, cc_toolchain_suite, config_feature_flag, config_setting, constraint_setting, constraint_value, environment, existing_rule, existing_rules, exports_files, extra_action, fdo_prefetch_hints, fdo_profile, filegroup, genquery, genrule, glob, java_binary, java_import, java_library, java_lite_proto_library, java_package_configuration, java_plugin, java_plugins_flag_alias, java_proto_library, java_runtime, java_test, java_toolchain, label_flag, label_setting, legacy_globals, memprof_profile, module_name, module_version, objc_import, objc_library, package, package_group, package_name, package_relative_label, platform, propeller_optimize, proto_lang_toolchain, proto_library, repo_name, repository_name, sh_binary, sh_library, sh_test, starlark_doc_extract, subpackages, test_suite, toolchain, toolchain_type, xcode_config, xcode_config_alias, xcode_version
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/protobuf+/BUILD.bazel:83:6: Target '@@protobuf+//src/google/protobuf:timestamp_proto' contains an error and its package is in error and referenced by '@@protobuf+//:timestamp_proto'
+ERROR: Analysis of target '//src:bazel' failed; build aborted: Analysis failed
+INFO: Elapsed time: 9.438s, Critical Path: 0.03s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
+FAILED:
