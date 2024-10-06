@@ -50,3 +50,24 @@ bootstrap: root-40382-g1886ab17c1b
 system: 42440
 date: Sun Oct  6 02:06:39 PM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit 678b01a512c0b28c87067cdf5a4e0224a82716c0
++ /home/rschiele/tools/bazel/root-40382-g1886ab17c1b/bazel build //src:bazel --compilation_mode=opt
+Starting local Bazel server and connecting to it...
+Computing main repo mapping:
+Computing main repo mapping:
+Loading:
+Loading: 0 packages loaded
+ERROR: Traceback (most recent call last):
+	File "/home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java+/java/common/rules/impl/compile_action.bzl", line 23, column 36, in <toplevel>
+		_java_common_internal = java_common.internal_DO_NOT_USE()
+Error: 'struct' value has no field or method 'internal_DO_NOT_USE'
+Available attributes: BootClassPathInfo, JavaPluginInfo, JavaRuntimeClasspathInfo, JavaRuntimeInfo, JavaToolchainInfo, MessageBundleInfo, add_constraints, compile, default_javac_opts, default_javac_opts_depset, get_constraints, java_toolchain_label, make_non_strict, merge, pack_sources, provider, run_ijar, set_annotation_processing, stamp_jar
+WARNING: Target pattern parsing failed.
+ERROR: Skipping '//src:bazel': error loading package 'src': at /home/rschiele/bazel/src/build_defs.bzl:17:6: at /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java+/java/defs.bzl:19:6: at /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java+/java/java_plugin.bzl:16:6: at /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java+/java/bazel/rules/bazel_java_plugin.bzl:25:6: at /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java+/java/common/rules/impl/basic_java_library_impl.bzl:24:6: initialization of module 'java/common/rules/impl/compile_action.bzl' failed
+ERROR: error loading package 'src': at /home/rschiele/bazel/src/build_defs.bzl:17:6: at /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java+/java/defs.bzl:19:6: at /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java+/java/java_plugin.bzl:16:6: at /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java+/java/bazel/rules/bazel_java_plugin.bzl:25:6: at /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_java+/java/common/rules/impl/basic_java_library_impl.bzl:24:6: initialization of module 'java/common/rules/impl/compile_action.bzl' failed
+INFO: Elapsed time: 4.395s
+INFO: 0 processes.
+ERROR: Build did NOT complete successfully
+FAILED:
