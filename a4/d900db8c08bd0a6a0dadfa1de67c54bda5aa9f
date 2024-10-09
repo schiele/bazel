@@ -3,3 +3,12 @@ bootstrap: 8.0.0rc1-17-g08ff8bbc144
 system: 42440
 date: Wed Oct  9 01:24:31 PM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit a4d900db8c08bd0a6a0dadfa1de67c54bda5aa9f
++ /home/rschiele/tools/bazel/8.0.0rc1-17-g08ff8bbc144/bazel build //src:bazel --compilation_mode=opt
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+Computing main repo mapping:
+ERROR: For repository 'rules_java', the root module requires module version rules_java@8.0.1, but got rules_java@8.1.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: Error computing the main repository mapping: Direct dependency check failed.
