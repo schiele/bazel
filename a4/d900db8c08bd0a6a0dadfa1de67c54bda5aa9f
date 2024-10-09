@@ -12,3 +12,5 @@ Starting local Bazel server and connecting to it...
 Computing main repo mapping:
 ERROR: For repository 'rules_java', the root module requires module version rules_java@8.0.1, but got rules_java@8.1.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
 ERROR: Error computing the main repository mapping: Direct dependency check failed.
+======================================================================
+BUILD: 8.0.0rc1-2-ga4d900db8c0
