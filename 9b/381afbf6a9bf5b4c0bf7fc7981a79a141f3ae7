@@ -35,3 +35,29 @@ bootstrap: 7.2.1rc1-10-g3324f06cbd5
 system: 42440
 date: Wed Oct  9 01:59:54 PM CEST 2024
 tasks: build[failed]
+FAILED:
+Caused by: java.util.concurrent.CompletionException: com.google.devtools.build.lib.cmdline.LabelSyntaxException: invalid repository name 'abseil-cpp+': repo names may contain only A-Z, a-z, 0-9, '-', '_', '.' and '~' and must not start with '~'
+	at com.github.benmanes.caffeine.cache.LocalLoadingCache.lambda$newMappingFunction$3(LocalLoadingCache.java:204)
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.lambda$doComputeIfAbsent$13(BoundedLocalCache.java:2451)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(Unknown Source)
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.doComputeIfAbsent(BoundedLocalCache.java:2449)
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.computeIfAbsent(BoundedLocalCache.java:2432)
+	at com.github.benmanes.caffeine.cache.LocalCache.computeIfAbsent(LocalCache.java:107)
+	at com.github.benmanes.caffeine.cache.LocalLoadingCache.get(LocalLoadingCache.java:57)
+	at com.google.devtools.build.lib.cmdline.RepositoryName.createUnvalidated(RepositoryName.java:90)
+	at com.google.devtools.build.lib.cmdline.PackageIdentifier.discoverFromExecPath(PackageIdentifier.java:96)
+	at com.google.devtools.build.lib.skyframe.ActionExecutionFunction$PackageRootResolverWithEnvironment.findPackageRootsForFiles(ActionExecutionFunction.java:691)
+	at com.google.devtools.build.lib.actions.ArtifactFactory.resolveSourceArtifacts(ArtifactFactory.java:490)
+	at com.google.devtools.build.lib.actions.ActionCacheChecker.getCachedInputs(ActionCacheChecker.java:813)
+	at com.google.devtools.build.lib.skyframe.SkyframeActionExecutor.getActionCachedInputs(SkyframeActionExecutor.java:811)
+	at com.google.devtools.build.lib.skyframe.ActionExecutionFunction.collectInputs(ActionExecutionFunction.java:591)
+	at com.google.devtools.build.lib.skyframe.ActionExecutionFunction.computeInternal(ActionExecutionFunction.java:252)
+	at com.google.devtools.build.lib.skyframe.ActionExecutionFunction.compute(ActionExecutionFunction.java:171)
+	at com.google.devtools.build.skyframe.AbstractParallelEvaluator$Evaluate.run(AbstractParallelEvaluator.java:461)
+	... 7 more
+Caused by: com.google.devtools.build.lib.cmdline.LabelSyntaxException: invalid repository name 'abseil-cpp+': repo names may contain only A-Z, a-z, 0-9, '-', '_', '.' and '~' and must not start with '~'
+	at com.google.devtools.build.lib.cmdline.LabelParser.syntaxErrorf(LabelParser.java:208)
+	at com.google.devtools.build.lib.cmdline.RepositoryName.validate(RepositoryName.java:160)
+	at com.google.devtools.build.lib.cmdline.RepositoryName.lambda$static$0(RepositoryName.java:61)
+	at com.github.benmanes.caffeine.cache.LocalLoadingCache.lambda$newMappingFunction$3(LocalLoadingCache.java:197)
+	... 23 more
