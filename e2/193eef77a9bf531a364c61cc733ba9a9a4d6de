@@ -31,3 +31,7 @@ Caused by: com.google.devtools.build.lib.cmdline.LabelSyntaxException: invalid r
 	... 23 more
 ======================================================================
 BUILD: 7.3.1-100-ge2193eef77a
+bootstrap: 7.2.0
+system: 42440
+date: Wed Oct  9 02:03:39 PM CEST 2024
+tasks:[incomplete]
