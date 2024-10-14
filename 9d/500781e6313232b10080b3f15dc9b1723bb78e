@@ -2,4 +2,4 @@ BUILD: 8.0.0rc1-51-g9d500781e63
 bootstrap: 8.0.0rc1-48-g00fdb673ba8
 system: 42440
 date: Mon Oct 14 06:30:05 PM CEST 2024
-tasks: build install[incomplete]
+tasks: build install
