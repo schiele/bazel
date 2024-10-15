@@ -3,3 +3,23 @@ bootstrap: 8.0.0rc1-56-g73f7d23a7a6
 system: 42440
 date: Tue Oct 15 02:11:04 PM CEST 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit f0268e3be1c426e00e8cefcf14cb66b70848c420
++ /home/rschiele/tools/bazel/8.0.0rc1-56-g73f7d23a7a6/bazel build //src:bazel --compilation_mode=opt
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+Computing main repo mapping:
+Computing main repo mapping:
+Computing main repo mapping:
+Computing main repo mapping:
+ERROR: For repository 'rules_license', the root module requires module version rules_license@0.0.7, but got rules_license@1.0.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'bazel_skylib', the root module requires module version bazel_skylib@1.6.1, but got bazel_skylib@1.7.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'com_google_protobuf', the root module requires module version protobuf@21.7, but got protobuf@27.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'io_bazel_skydoc', the root module requires module version stardoc@0.5.6, but got stardoc@0.7.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'rules_cc', the root module requires module version rules_cc@0.0.9, but got rules_cc@0.0.12 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'rules_java', the root module requires module version rules_java@7.6.5, but got rules_java@8.1.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'rules_python', the root module requires module version rules_python@0.33.2, but got rules_python@0.36.0 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'abseil-cpp', the root module requires module version abseil-cpp@20230125.1, but got abseil-cpp@20230802.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: For repository 'upb', the root module requires module version upb@0.0.0-20220923-a547704, but got upb@0.0.0-20230516-61a97ef in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: Error computing the main repository mapping: Direct dependency check failed.
