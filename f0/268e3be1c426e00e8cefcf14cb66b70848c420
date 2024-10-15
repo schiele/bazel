@@ -23,3 +23,5 @@ ERROR: For repository 'rules_python', the root module requires module version ru
 ERROR: For repository 'abseil-cpp', the root module requires module version abseil-cpp@20230125.1, but got abseil-cpp@20230802.1 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
 ERROR: For repository 'upb', the root module requires module version upb@0.0.0-20220923-a547704, but got upb@0.0.0-20230516-61a97ef in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
 ERROR: Error computing the main repository mapping: Direct dependency check failed.
+======================================================================
+BUILD: 7.4.0rc1-2-gf0268e3be1c
