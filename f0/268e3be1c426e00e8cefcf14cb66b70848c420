@@ -128,3 +128,7 @@ tasks: build install
 SUCCESS
 ======================================================================
 BUILD: 7.4.0rc2
+bootstrap: 7.4.0rc1-2-gf0268e3be1c
+system: 42440
+date: Tue Oct 15 08:36:18 PM CEST 2024
+tasks:[incomplete]
