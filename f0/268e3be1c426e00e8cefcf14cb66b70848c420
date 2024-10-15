@@ -126,3 +126,5 @@ system: 42440
 date: Tue Oct 15 02:23:22 PM CEST 2024
 tasks: build install
 SUCCESS
+======================================================================
+BUILD: 7.4.0rc2
