@@ -28,4 +28,4 @@ BUILD: 7.4.0rc1-2-gf0268e3be1c
 bootstrap: 8.0.0rc1-56-g73f7d23a7a6
 system: 42440
 date: Tue Oct 15 02:12:35 PM CEST 2024
-tasks: build[incomplete]
+tasks: build[failed]
