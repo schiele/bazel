@@ -2,4 +2,4 @@ BUILD: 7.2.1
 bootstrap: 7.2.0
 system: 42480
 date: Thu Oct 17 08:38:38 PM CEST 2024
-tasks: build install[incomplete]
+tasks: build install
