@@ -9,4 +9,4 @@ BUILD: 7.4.0rc4
 bootstrap: 7.4.0rc3-1-gaa47fd1de7d
 system: 42540
 date: Fri Oct 25 06:43:42 PM CEST 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
