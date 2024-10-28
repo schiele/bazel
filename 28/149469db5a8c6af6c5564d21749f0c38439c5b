@@ -2,4 +2,4 @@ BUILD: 7.4.0-4-g28149469db5
 bootstrap: 7.4.0-3-gb86ef4211ef
 system: 42540
 date: Mon Oct 28 06:57:46 PM CET 2024
-tasks: build install[incomplete]
+tasks: build install
