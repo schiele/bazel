@@ -9,4 +9,4 @@ BUILD: 8.0.0rc2
 bootstrap: 8.0.0rc2-9-ga98e1be473e
 system: 42540
 date: Thu Oct 31 07:57:14 AM CET 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
