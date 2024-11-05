@@ -2,4 +2,4 @@ BUILD: 8.0.0rc1-235-g1f0db430461
 bootstrap: 8.0.0rc1-233-gde9debba61a
 system: 42540
 date: Tue Nov  5 01:15:07 PM CET 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
