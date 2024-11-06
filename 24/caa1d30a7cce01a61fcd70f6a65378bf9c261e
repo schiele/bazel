@@ -2,4 +2,4 @@ BUILD: 7.4.1rc1-3-g24caa1d30a7
 bootstrap: 7.4.1rc1-2-gbcc4e9f2af2
 system: 42590
 date: Wed Nov  6 08:06:19 PM CET 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
