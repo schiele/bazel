@@ -3,3 +3,26 @@ bootstrap: 8.0.0rc2-74-g083fc651d5c
 system: 42670
 date: Wed Nov 20 09:59:36 PM CET 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit 719d082cbd7b8318fee5d1818eee47dbe7ddca19
++ /home/rschiele/tools/bazel/8.0.0rc2-74-g083fc651d5c/bazel build //src:bazel --compilation_mode=opt
+Computing main repo mapping:
+Loading:
+Loading: 0 packages loaded
+WARNING: Build options --host_per_file_copt and --per_file_copt have changed, discarding analysis cache (this can be expensive, see https://bazel.build/advanced/performance/iteration-speed).
+Analyzing: target //src:bazel (0 packages loaded, 0 targets configured)
+Analyzing: target //src:bazel (0 packages loaded, 0 targets configured)
+
+Analyzing: target //src:bazel (138 packages loaded, 529 targets configured)
+
+Analyzing: target //src:bazel (138 packages loaded, 529 targets configured)
+
+DEBUG: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_jvm_external+/private/extensions/maven.bzl:146:14: The maven repository 'maven' is used in two different bazel modules, originally in 'bazel' and now in 'grpc-java'
+DEBUG: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_jvm_external+/private/extensions/maven.bzl:146:14: The maven repository 'maven' is used in two different bazel modules, originally in 'bazel' and now in 'protobuf'
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/protobuf+/java/core/BUILD.bazel:182:22: in (an implicit dependency) attribute of java_library rule @@protobuf+//java/core:lite_runtime_only: '@@bazel_tools//tools/jdk:java_plugins_flag_alias' does not have mandatory providers: 'JavaPluginInfo'. Since this rule was created by the macro 'protobuf_java_library', the error might have been caused by the macro implementation
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/protobuf+/java/core/BUILD.bazel:182:22: Analysis of target '@@protobuf+//java/core:lite_runtime_only' failed
+ERROR: Analysis of target '//src:bazel' failed; build aborted: Analysis failed
+INFO: Elapsed time: 4.476s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
