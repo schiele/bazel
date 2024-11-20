@@ -38,3 +38,26 @@ bootstrap: 8.0.0rc2-74-g083fc651d5c
 system: 42670
 date: Wed Nov 20 08:43:35 PM CET 2024
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit a4bca9fd308aeeb617f47d477fb8252756f7401c
++ /home/rschiele/tools/bazel/8.0.0rc2-74-g083fc651d5c/bazel build //src:bazel --compilation_mode=opt
+Computing main repo mapping:
+Loading:
+Loading: 0 packages loaded
+WARNING: Couldn't auto load rules or symbols, because no dependency on module/repository 'rules_android' found. This will result in a failure if there's a reference to those rules or symbols.
+Analyzing: target //src:bazel (1 packages loaded, 0 targets configured)
+Analyzing: target //src:bazel (1 packages loaded, 0 targets configured)
+
+Analyzing: target //src:bazel (139 packages loaded, 529 targets configured)
+
+Analyzing: target //src:bazel (139 packages loaded, 529 targets configured)
+
+DEBUG: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_jvm_external+/private/extensions/maven.bzl:146:14: The maven repository 'maven' is used in two different bazel modules, originally in 'bazel' and now in 'grpc-java'
+DEBUG: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_jvm_external+/private/extensions/maven.bzl:146:14: The maven repository 'maven' is used in two different bazel modules, originally in 'bazel' and now in 'protobuf'
+ERROR: /home/rschiele/bazel/src/main/java/com/google/devtools/build/lib/analysis/starlark/annotations/BUILD:22:13: in (an implicit dependency) attribute of java_library rule //src/main/java/com/google/devtools/build/lib/analysis/starlark/annotations:annotations_internal: '@@bazel_tools//tools/jdk:java_plugins_flag_alias' does not have mandatory providers: 'JavaPluginInfo'. Since this rule was created by the macro 'java_library', the error might have been caused by the macro implementation
+ERROR: /home/rschiele/bazel/src/main/java/com/google/devtools/build/lib/analysis/starlark/annotations/BUILD:22:13: Analysis of target '//src/main/java/com/google/devtools/build/lib/analysis/starlark/annotations:annotations_internal' failed
+ERROR: Analysis of target '//src:bazel' failed; build aborted: Analysis failed
+INFO: Elapsed time: 4.355s, Critical Path: 0.00s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
