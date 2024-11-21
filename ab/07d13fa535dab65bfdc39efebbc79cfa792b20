@@ -3,3 +3,29 @@ bootstrap: 8.0.0rc2-74-g083fc651d5c
 system: 42670
 date: Thu Nov 21 03:26:58 PM CET 2024
 tasks: build[failed]
+FAILED:
+DEBUG: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/rules_jvm_external+/coursier.bzl:721:18: Found duplicate artifact versions
+    com.google.auth:google-auth-library-credentials has multiple versions 1.6.0, 1.23.0
+    com.google.auth:google-auth-library-oauth2-http has multiple versions 1.6.0, 1.23.0
+    com.google.code.gson:gson has multiple versions 2.10.1, 2.11.0, 2.8.9
+    com.google.errorprone:error_prone_annotations has multiple versions 2.32.0, 2.28.0, 2.5.1
+    com.google.guava:guava has multiple versions 33.2.1-jre, 33.2.1-android, 32.0.1-jre
+    com.google.j2objc:j2objc-annotations has multiple versions 1.3, 3.0.0, 2.8
+    com.google.truth:truth has multiple versions 1.4.0, 1.4.2, 1.1.2
+    io.netty:netty-tcnative-classes has multiple versions 2.0.56.Final, 2.0.61.Final
+    com.google.guava:guava-testlib has multiple versions 33.2.1-jre, 32.0.1-jre
+    org.mockito:mockito-core has multiple versions 5.4.0, 4.3.1
+Please remove duplicate artifacts from the artifact list so you do not get unexpected artifact versions
+Analyzing: target //src:bazel (394 packages loaded, 8587 targets configured)
+
+DEBUG: /home/rschiele/.cache/bazel/_bazel_rschiele/54cdfdbdd6f041e1d73f9dbcf6a0e6f8/external/protobuf+/protobuf.bzl:650:10: The py_proto_library macro is deprecated and will be removed in the 30.x release. switch to the rule defined by rules_python or the one in bazel/py_proto_library.bzl.
+Analyzing: target //src:bazel (511 packages loaded, 11515 targets configured)
+
+Analyzing: target //src:bazel (540 packages loaded, 12375 targets configured)
+
+ERROR: /home/rschiele/bazel/src/main/java/com/google/devtools/build/lib/util/BUILD:292:13: in (an implicit dependency) attribute of java_library rule //src/main/java/com/google/devtools/build/lib/util:TestType: '@@bazel_tools//tools/jdk:java_plugins_flag_alias' does not have mandatory providers: 'JavaPluginInfo'. Since this rule was created by the macro 'java_library', the error might have been caused by the macro implementation
+ERROR: /home/rschiele/bazel/src/main/java/com/google/devtools/build/lib/util/BUILD:292:13: Analysis of target '//src/main/java/com/google/devtools/build/lib/util:TestType' failed
+ERROR: Analysis of target '//src:bazel' failed; build aborted: Analysis failed
+INFO: Elapsed time: 26.729s, Critical Path: 0.02s
+INFO: 1 process: 1 internal.
+ERROR: Build did NOT complete successfully
