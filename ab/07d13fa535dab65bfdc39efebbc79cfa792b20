@@ -29,3 +29,5 @@ ERROR: Analysis of target '//src:bazel' failed; build aborted: Analysis failed
 INFO: Elapsed time: 26.729s, Critical Path: 0.02s
 INFO: 1 process: 1 internal.
 ERROR: Build did NOT complete successfully
+======================================================================
+BUILD: 8.0.0rc2-77-gab07d13fa53
