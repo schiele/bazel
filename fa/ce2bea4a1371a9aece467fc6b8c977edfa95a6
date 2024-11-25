@@ -2,4 +2,4 @@ BUILD: 8.0.0rc1-476-gface2bea4a1
 bootstrap: 8.0.0rc1-472-gfe743b9645b
 system: 42670
 date: Mon Nov 25 04:23:42 PM CET 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
