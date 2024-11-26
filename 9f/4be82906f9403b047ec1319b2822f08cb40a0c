@@ -9,4 +9,4 @@ BUILD: 8.0.0rc3
 bootstrap: 8.0.0rc3-1-g11596c3c162
 system: 42670
 date: Tue Nov 26 02:53:37 PM CET 2024
-tasks: build[incomplete]
+tasks: build install[incomplete]
