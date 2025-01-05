@@ -2,4 +2,4 @@ BUILD: 8.0.0rc1-729-gfa48bc66e71
 bootstrap: 8.0.0rc1-615-gaf48ffe0528
 system: 42790
 date: Sun Jan  5 08:30:17 AM CET 2025
-tasks: build[incomplete]
+tasks: build install[incomplete]
