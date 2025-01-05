@@ -21,4 +21,4 @@ BUILD: 8.0.0
 bootstrap: 8.0.0rc7-5-g946ded70aab
 system: 42790
 date: Sun Jan  5 03:39:46 PM CET 2025
-tasks: build install[incomplete]
+tasks: build install
