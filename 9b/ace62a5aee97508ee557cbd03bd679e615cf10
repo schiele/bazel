@@ -2,4 +2,4 @@ BUILD: 7.4.1-10-g9bace62a5ae
 bootstrap: 7.4.1-9-g2ffb9630d82
 system: 42790
 date: Tue Jan  7 05:38:21 PM CET 2025
-tasks: build[incomplete]
+tasks: build install[incomplete]
