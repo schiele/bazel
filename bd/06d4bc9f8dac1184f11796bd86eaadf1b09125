@@ -105,3 +105,11 @@ bootstrap: 8.0.0rc1-792-gc570f978e5b
 system: 42840
 date: Thu Jan 16 06:52:48 PM CET 2025
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit bd06d4bc9f8dac1184f11796bd86eaadf1b09125
++ /home/rschiele/tools/bazel/8.0.0rc1-792-gc570f978e5b/bazel build //src:bazel --compilation_mode=opt
+Extracting Bazel installation...
+Starting local Bazel server (no_version) and connecting to it...
+Computing main repo mapping:
+ERROR: Error computing the main repository mapping: Invalid registry URL: /home/rschiele/bazel/registry: Registry URL has no scheme -- supported schemes are: http://, https:// and file://: /home/rschiele/bazel/registry
