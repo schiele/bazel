@@ -137,3 +137,5 @@ FAILED:
 + /home/rschiele/tools/bazel/8.0.0rc1-792-gc570f978e5b/bazel build //src:bazel --compilation_mode=opt
 Computing main repo mapping:
 ERROR: Error computing the main repository mapping: Error accessing registry file://home/rschiele/bazel/registry: Failed to fetch registry file file://home/rschiele/bazel/registry/modules/grpc-java/1.66.0/MODULE.bazel: home
+======================================================================
+BUILD: 8.0.0rc1-806-gbd06d4bc9f8
