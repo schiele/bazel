@@ -67,3 +67,29 @@ bootstrap: 8.0.0rc1-792-gc570f978e5b
 system: 42840
 date: Thu Jan 16 12:39:49 PM CET 2025
 tasks: build[failed]
+FAILED:
+[1,161 / 4,546] JavaToolchainCompileClasses external/rules_java+/toolchains/platformclasspath_classes [for tool]; 7s linux-sandbox ... (16 actions, 15 running)
+INFO: From Compiling src/main/native/unix_jni_linux.cc:
+src/main/native/unix_jni_linux.cc: In function 'uint64_t blaze_jni::StatEpochMilliseconds(const portable_stat_struct&, StatTimes)':
+src/main/native/unix_jni_linux.cc:61:1: warning: control reaches end of non-void function [-Wreturn-type]
+   61 | }
+      | ^
+[1,178 / 4,546] JavaToolchainCompileClasses external/rules_java+/toolchains/platformclasspath_classes; 5s linux-sandbox ... (16 actions, 15 running)
+[1,191 / 4,546] Executing genrule //src:embedded_tools_jdk_minimal; 2s linux-sandbox ... (16 actions, 15 running)
+[1,204 / 4,546] Executing genrule //src:embedded_tools_jdk_minimal; 3s linux-sandbox ... (16 actions, 15 running)
+[1,209 / 4,546] Executing genrule //src:embedded_tools_jdk_minimal; 5s linux-sandbox ... (16 actions running)
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/rules_java+/toolchains/BUILD:291:14: JavaToolchainCompileBootClasspath external/rules_java+/toolchains/platformclasspath.jar [for tool] failed: (Exit 1): java failed: error executing JavaToolchainCompileBootClasspath command (from target @@rules_java+//toolchains:platformclasspath) external/rules_java++toolchains+local_jdk/bin/java -XX:+IgnoreUnrecognizedVMOptions -XX:-UsePerfData '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED' ... (remaining 7 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+Exception in thread "main" java.io.IOException: external/rules_java++toolchains+local_jdk/lib/jrt-fs.jar not exist
+	at java.base/jdk.internal.jrtfs.JrtFileSystemProvider.newFileSystem(JrtFileSystemProvider.java:119)
+	at java.base/jdk.internal.jrtfs.JrtFileSystemProvider.newFileSystem(JrtFileSystemProvider.java:107)
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:339)
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:288)
+	at DumpPlatformClassPath.dumpJDK9AndNewerBootClassPath(DumpPlatformClassPath.java:104)
+	at DumpPlatformClassPath.main(DumpPlatformClassPath.java:66)
+Target //src:bazel failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 22.821s, Critical Path: 20.05s
+INFO: 362 processes: 271 action cache hit, 52 internal, 310 linux-sandbox.
+ERROR: Build did NOT complete successfully
