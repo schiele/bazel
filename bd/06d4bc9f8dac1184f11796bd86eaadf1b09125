@@ -115,3 +115,7 @@ Computing main repo mapping:
 ERROR: Error computing the main repository mapping: Invalid registry URL: /home/rschiele/bazel/registry: Registry URL has no scheme -- supported schemes are: http://, https:// and file://: /home/rschiele/bazel/registry
 ======================================================================
 BUILD: 8.0.0rc1-806-gbd06d4bc9f8
+bootstrap: 8.0.0rc1-792-gc570f978e5b
+system: 42840
+date: Thu Jan 16 06:53:25 PM CET 2025
+tasks:[incomplete]
