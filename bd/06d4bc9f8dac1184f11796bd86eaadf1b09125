@@ -151,3 +151,7 @@ Computing main repo mapping:
 ERROR: Error computing the main repository mapping: Error accessing registry file://home/rschiele/bazel/registry: Failed to fetch registry file file://home/rschiele/bazel/registry/modules/bazel_skylib/1.7.1/MODULE.bazel: home
 ======================================================================
 BUILD: 8.0.0rc1-806-gbd06d4bc9f8
+bootstrap: 8.0.0rc1-792-gc570f978e5b
+system: 42840
+date: Thu Jan 16 06:55:21 PM CET 2025
+tasks:[incomplete]
