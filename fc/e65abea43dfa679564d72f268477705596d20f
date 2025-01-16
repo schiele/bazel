@@ -29,3 +29,5 @@ ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3
 INFO: Elapsed time: 20.305s, Critical Path: 4.75s
 INFO: 829 processes: 642 internal, 186 linux-sandbox, 1 local.
 ERROR: Build did NOT complete successfully
+======================================================================
+BUILD: 8.0.0rc1-801-gfce65abea43
