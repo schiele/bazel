@@ -10,3 +10,5 @@ FAILED:
 Starting local Bazel server (no_version) and connecting to it...
 Computing main repo mapping:
 ERROR: Error computing the main repository mapping: Error accessing registry file://home/rschiele/bazel/registry: Failed to fetch registry file file://home/rschiele/bazel/registry/modules/rules_python/0.40.0/MODULE.bazel: home
+======================================================================
+BUILD: 8.0.0rc1-813-g3697c914995
