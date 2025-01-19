@@ -29,3 +29,5 @@ Use --sandbox_debug to see verbose messages from the sandbox and retain the sand
 INFO: Elapsed time: 18.930s, Critical Path: 4.21s
 INFO: 394 processes: 616 action cache hit, 228 internal, 166 linux-sandbox.
 ERROR: Build did NOT complete successfully
+======================================================================
+BUILD: 8.0.0rc1-819-g7d50755cf12
