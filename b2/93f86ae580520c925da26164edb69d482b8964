@@ -3,3 +3,10 @@ bootstrap: 8.0.0rc1-792-gc570f978e5b
 system: 42870
 date: Sun Jan 19 06:57:13 AM CET 2025
 tasks: build[failed]
+FAILED:
++ GIT_EDITOR='sed -i -e '\''s/^\(tasks:.*\)\(\[incomplete\]\)$/\1 build\2/'\'''
++ git notes --ref build edit b293f86ae580520c925da26164edb69d482b8964
++ /home/rschiele/tools/bazel/8.0.0rc1-792-gc570f978e5b/bazel build //src:bazel --compilation_mode=opt
+Computing main repo mapping:
+ERROR: For repository 'rules_cc', the root module requires module version rules_cc@0.0.16, but got rules_cc@0.0.17 in the resolved dependency graph. Please update the version in your MODULE.bazel or set --check_direct_dependencies=off
+ERROR: Error computing the main repository mapping: Direct dependency check failed.
