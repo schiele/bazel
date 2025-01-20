@@ -3,3 +3,29 @@ bootstrap: 8.0.0rc1-792-gc570f978e5b
 system: 42870
 date: Mon Jan 20 06:24:11 PM CET 2025
 tasks: build[failed]
+FAILED:
+WARNING: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/grpc-java+/protobuf-lite/BUILD.bazel:24:15: in config_setting rule @@grpc-java+//protobuf-lite:android: select() on crosstool_top is deprecated. Use platform constraints instead: https://bazel.build/docs/configurable-attributes#platforms.
+Analyzing: target //src:bazel (534 packages loaded, 12556 targets and 79 aspects configured)
+
+INFO: Analyzed target //src:bazel (535 packages loaded, 13840 targets and 143 aspects configured).
+[567 / 4,542] Compiling src/main/cpp/util/strings.cc; 0s linux-sandbox ... (10 actions, 9 running)
+[783 / 4,542] Compiling src/main/cpp/util/strings.cc; 1s linux-sandbox ... (16 actions, 15 running)
+[995 / 4,542] Compiling tools/cpp/modules_tools/common/common.cc; 2s linux-sandbox ... (16 actions, 15 running)
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/rules_java+/toolchains/BUILD:332:14: JavaToolchainCompileBootClasspath external/rules_java+/toolchains/platformclasspath.jar [for tool] failed: (Exit 1): java failed: error executing JavaToolchainCompileBootClasspath command (from target @@rules_java+//toolchains:platformclasspath) external/rules_java++toolchains+local_jdk/bin/java -XX:+IgnoreUnrecognizedVMOptions -XX:-UsePerfData '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED' ... (remaining 7 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+Exception in thread "main" java.io.IOException: external/rules_java++toolchains+local_jdk/lib/jrt-fs.jar not exist
+	at java.base/jdk.internal.jrtfs.JrtFileSystemProvider.newFileSystem(JrtFileSystemProvider.java:119)
+	at java.base/jdk.internal.jrtfs.JrtFileSystemProvider.newFileSystem(JrtFileSystemProvider.java:107)
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:339)
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:288)
+	at DumpPlatformClassPath.dumpJDK9AndNewerBootClassPath(DumpPlatformClassPath.java:104)
+	at DumpPlatformClassPath.main(DumpPlatformClassPath.java:66)
+Target //src:bazel failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/rules_jvm_external+/private/tools/java/com/github/bazelbuild/rules_jvm_external/jar/BUILD:4:12 Building external/rules_jvm_external+/private/tools/java/com/github/bazelbuild/rules_jvm_external/jar/AddJarManifestEntry.jar (1 source file) [for tool] failed: (Exit 1): java failed: error executing JavaToolchainCompileBootClasspath command (from target @@rules_java+//toolchains:platformclasspath) external/rules_java++toolchains+local_jdk/bin/java -XX:+IgnoreUnrecognizedVMOptions -XX:-UsePerfData '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED' ... (remaining 7 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+INFO: Elapsed time: 12.453s, Critical Path: 2.63s
+INFO: 59 processes: 985 action cache hit, 23 internal, 36 linux-sandbox.
+ERROR: Build did NOT complete successfully
