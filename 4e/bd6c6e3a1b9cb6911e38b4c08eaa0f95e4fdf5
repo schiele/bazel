@@ -3,3 +3,29 @@ bootstrap: 8.0.0rc1-792-gc570f978e5b
 system: 42870
 date: Wed Jan 22 03:39:03 PM CET 2025
 tasks: build[failed]
+FAILED:
+WARNING: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/c-ares+/BUILD.bazel:15:15: in config_setting rule @@c-ares+//:android: select() on crosstool_top is deprecated. Use platform constraints instead: https://bazel.build/docs/configurable-attributes#platforms.
+Analyzing: target //src:bazel (519 packages loaded, 10876 targets configured)
+
+WARNING: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/grpc+/BUILD:212:15: in config_setting rule @@grpc+//:mac_arm64: select() on cpu is deprecated. Use platform constraints instead: https://bazel.build/docs/configurable-attributes#platforms.
+WARNING: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/grpc+/BUILD:202:15: in config_setting rule @@grpc+//:mac: select() on cpu is deprecated. Use platform constraints instead: https://bazel.build/docs/configurable-attributes#platforms.
+WARNING: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/grpc+/BUILD:207:15: in config_setting rule @@grpc+//:mac_x86_64: select() on cpu is deprecated. Use platform constraints instead: https://bazel.build/docs/configurable-attributes#platforms.
+DEBUG: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/protobuf+/protobuf.bzl:650:10: The py_proto_library macro is deprecated and will be removed in the 30.x release. switch to the rule defined by rules_python or the one in bazel/py_proto_library.bzl.
+INFO: Analyzed target //src:bazel (535 packages loaded, 13861 targets and 145 aspects configured).
+[1 / 1] no actions running
+[1,076 / 4,564] Compiling tools/cpp/modules_tools/common/common.cc; 0s linux-sandbox ... (15 actions running)
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/rules_java+/toolchains/BUILD:332:14: JavaToolchainCompileBootClasspath external/rules_java+/toolchains/platformclasspath.jar failed: (Exit 1): java failed: error executing JavaToolchainCompileBootClasspath command (from target @@rules_java+//toolchains:platformclasspath) external/rules_java++toolchains+local_jdk/bin/java -XX:+IgnoreUnrecognizedVMOptions -XX:-UsePerfData '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED' ... (remaining 7 arguments skipped)
+
+Use --sandbox_debug to see verbose messages from the sandbox and retain the sandbox build root for debugging
+Exception in thread "main" java.io.IOException: external/rules_java++toolchains+local_jdk/lib/jrt-fs.jar not exist
+	at java.base/jdk.internal.jrtfs.JrtFileSystemProvider.newFileSystem(JrtFileSystemProvider.java:119)
+	at java.base/jdk.internal.jrtfs.JrtFileSystemProvider.newFileSystem(JrtFileSystemProvider.java:107)
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:339)
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:288)
+	at DumpPlatformClassPath.dumpJDK9AndNewerBootClassPath(DumpPlatformClassPath.java:104)
+	at DumpPlatformClassPath.main(DumpPlatformClassPath.java:66)
+Target //src:bazel failed to build
+Use --verbose_failures to see the command lines of failed build steps.
+INFO: Elapsed time: 8.396s, Critical Path: 1.66s
+INFO: 18 processes: 1075 action cache hit, 18 internal.
+ERROR: Build did NOT complete successfully
