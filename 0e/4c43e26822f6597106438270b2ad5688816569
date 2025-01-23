@@ -3,3 +3,29 @@ bootstrap: 8.0.0rc1-792-gc570f978e5b
 system: 42870
 date: Thu Jan 23 08:08:40 PM CET 2025
 tasks: build[failed]
+FAILED:
+1737659330.835011912: src/main/tools/linux-sandbox-pid1.cc:373: remount rw: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/28/execroot/_main
+1737659330.835021390: src/main/tools/linux-sandbox-pid1.cc:373: remount rw: /tmp
+1737659330.835026710: src/main/tools/linux-sandbox-pid1.cc:373: remount rw: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/28/execroot/_main
+1737659330.835096099: src/main/tools/linux-sandbox-pid1.cc:482: calling fork...
+1737659330.835308697: src/main/tools/linux-sandbox-pid1.cc:519: child started with PID 2
+1737659332.207230839: src/main/tools/linux-sandbox-pid1.cc:536: wait returned pid=2, status=0x00
+1737659332.207251928: src/main/tools/linux-sandbox-pid1.cc:554: child exited normally with code 0
+1737659332.209389264: src/main/tools/linux-sandbox.cc:253: child exited normally with code 0
+
+Run this command to start an interactive shell in an identical sandboxed environment:
+(exec env - \
+    PATH=/home/rschiele/bin:/usr/lib64/ccache/bin:/usr/bin/haswell:/usr/local/bin:/usr/bin:/opt/3rd-party/bin \
+    PWD=/proc/self/cwd \
+    TMPDIR=/tmp \
+  /home/rschiele/.cache/bazel/_bazel_rschiele/install/793ca787569640a0c39e655ffebc6f50/linux-sandbox -t 15 -w /dev/shm -w /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/28/execroot/_main -w /tmp -M /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/28/_hermetic_tmp -m /tmp -S /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/28/stats.out -D /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/28/debug.out -- /bin/sh -i)
+Target //src:bazel failed to build
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/rules_jvm_external+/private/tools/java/com/github/bazelbuild/rules_jvm_external/jar/BUILD:4:12 Building external/rules_jvm_external+/private/tools/java/com/github/bazelbuild/rules_jvm_external/jar/AddJarManifestEntry.jar (1 source file) [for tool] failed: (Exit 1): linux-sandbox failed: error executing JavaToolchainCompileBootClasspath command
+  (cd /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/32/execroot/_main && \
+  exec env - \
+    LC_CTYPE=C.UTF-8 \
+    TMPDIR=/tmp \
+  /home/rschiele/.cache/bazel/_bazel_rschiele/install/793ca787569640a0c39e655ffebc6f50/linux-sandbox -t 15 -w /dev/shm -w /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/32/execroot/_main -w /tmp -M /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/32/_hermetic_tmp -m /tmp -S /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/32/stats.out -D /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/32/debug.out -- external/rules_java++toolchains+local_jdk/bin/java -XX:+IgnoreUnrecognizedVMOptions -XX:-UsePerfData '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED' '--add-exports=jdk.compiler/com.sun.tools.javac.platform=ALL-UNNAMED' '--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED' -cp bazel-out/k8-opt-exec-ST-fad1763555eb/bin/external/rules_java+/toolchains/platformclasspath_classes DumpPlatformClassPath bazel-out/k8-opt-exec-ST-fad1763555eb/bin/external/rules_java+/toolchains/platformclasspath.jar external/rules_java++toolchains+local_jdk)
+INFO: Elapsed time: 11.565s, Critical Path: 4.20s
+INFO: 43 processes: 1223 action cache hit, 17 internal, 26 linux-sandbox.
+ERROR: Build did NOT complete successfully
