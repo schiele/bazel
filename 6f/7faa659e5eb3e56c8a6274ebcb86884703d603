@@ -2,4 +2,4 @@ BUILD: 8.0.1-41-g6f7faa659e5
 bootstrap: 8.0.1-40-g16f6d5ae222
 system: 42870
 date: Fri Jan 24 10:41:48 AM CET 2025
-tasks: build install[incomplete]
+tasks: build install
