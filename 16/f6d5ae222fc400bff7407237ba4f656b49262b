@@ -29,3 +29,5 @@ Use --verbose_failures to see the command lines of failed build steps.
 INFO: Elapsed time: 39.505s, Critical Path: 13.16s
 INFO: 1035 processes: 684 internal, 350 linux-sandbox, 1 local.
 ERROR: Build did NOT complete successfully
+======================================================================
+BUILD: 8.0.1-40-g16f6d5ae222
