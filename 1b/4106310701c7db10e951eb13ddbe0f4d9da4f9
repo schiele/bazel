@@ -3,3 +3,29 @@ bootstrap: 8.0.0rc1-792-gc570f978e5b
 system: 42870
 date: Fri Jan 24 09:54:56 AM CET 2025
 tasks: build[failed]
+FAILED:
+  /home/rschiele/.cache/bazel/_bazel_rschiele/install/793ca787569640a0c39e655ffebc6f50/linux-sandbox -t 15 -w /dev/shm -w /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/5/execroot/_main -w /tmp -M /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/5/_hermetic_tmp -m /tmp -S /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/5/stats.out -D /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/5/debug.out -- external/rules_java++toolchains+local_jdk/bin/java -XX:+IgnoreUnrecognizedVMOptions -XX:-UsePerfData '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED' '--add-exports=jdk.compiler/com.sun.tools.javac.platform=ALL-UNNAMED' '--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED' -cp bazel-out/k8-opt-exec-ST-fad1763555eb/bin/external/rules_java+/toolchains/platformclasspath_classes DumpPlatformClassPath bazel-out/k8-opt-exec-ST-fad1763555eb/bin/external/rules_java+/toolchains/platformclasspath.jar external/rules_java++toolchains+local_jdk)
+Exception in thread "main" java.io.IOException: external/rules_java++toolchains+local_jdk/lib/jrt-fs.jar not exist
+	at java.base/jdk.internal.jrtfs.JrtFileSystemProvider.newFileSystem(JrtFileSystemProvider.java:119)
+	at java.base/jdk.internal.jrtfs.JrtFileSystemProvider.newFileSystem(JrtFileSystemProvider.java:107)
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:339)
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:288)
+	at DumpPlatformClassPath.dumpJDK9AndNewerBootClassPath(DumpPlatformClassPath.java:104)
+	at DumpPlatformClassPath.main(DumpPlatformClassPath.java:66)
+ERROR: /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/external/rules_java+/toolchains/BUILD:332:14: JavaToolchainCompileBootClasspath external/rules_java+/toolchains/platformclasspath.jar failed: (Exit 1): linux-sandbox failed: error executing JavaToolchainCompileBootClasspath command
+  (cd /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/4/execroot/_main && \
+  exec env - \
+    LC_CTYPE=C.UTF-8 \
+    TMPDIR=/tmp \
+  /home/rschiele/.cache/bazel/_bazel_rschiele/install/793ca787569640a0c39e655ffebc6f50/linux-sandbox -t 15 -w /dev/shm -w /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/4/execroot/_main -w /tmp -M /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/4/_hermetic_tmp -m /tmp -S /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/4/stats.out -D /home/rschiele/.cache/bazel/_bazel_rschiele/a160a113efbdd27e0860db98519d3668/sandbox/linux-sandbox/4/debug.out -- external/rules_java++toolchains+local_jdk/bin/java -XX:+IgnoreUnrecognizedVMOptions -XX:-UsePerfData '--add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED' '--add-exports=jdk.compiler/com.sun.tools.javac.platform=ALL-UNNAMED' '--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED' -cp bazel-out/k8-opt/bin/external/rules_java+/toolchains/platformclasspath_classes DumpPlatformClassPath bazel-out/k8-opt/bin/external/rules_java+/toolchains/platformclasspath.jar external/rules_java++toolchains+local_jdk)
+Exception in thread "main" java.io.IOException: external/rules_java++toolchains+local_jdk/lib/jrt-fs.jar not exist
+	at java.base/jdk.internal.jrtfs.JrtFileSystemProvider.newFileSystem(JrtFileSystemProvider.java:119)
+	at java.base/jdk.internal.jrtfs.JrtFileSystemProvider.newFileSystem(JrtFileSystemProvider.java:107)
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:339)
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:288)
+	at DumpPlatformClassPath.dumpJDK9AndNewerBootClassPath(DumpPlatformClassPath.java:104)
+	at DumpPlatformClassPath.main(DumpPlatformClassPath.java:66)
+Target //src:bazel failed to build
+INFO: Elapsed time: 10.573s, Critical Path: 1.88s
+INFO: 16 processes: 1061 action cache hit, 16 internal.
+ERROR: Build did NOT complete successfully
