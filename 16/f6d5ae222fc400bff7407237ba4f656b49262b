@@ -31,3 +31,7 @@ INFO: 1035 processes: 684 internal, 350 linux-sandbox, 1 local.
 ERROR: Build did NOT complete successfully
 ======================================================================
 BUILD: 8.0.1-40-g16f6d5ae222
+bootstrap: 8.0.0
+system: 42870
+date: Fri Jan 24 10:11:31 AM CET 2025
+tasks:[incomplete]
