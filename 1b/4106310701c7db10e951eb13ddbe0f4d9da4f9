@@ -29,3 +29,5 @@ Target //src:bazel failed to build
 INFO: Elapsed time: 10.573s, Critical Path: 1.88s
 INFO: 16 processes: 1061 action cache hit, 16 internal.
 ERROR: Build did NOT complete successfully
+======================================================================
+BUILD: 8.0.0rc1-872-g1b410631070
