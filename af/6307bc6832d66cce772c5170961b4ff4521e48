@@ -2,4 +2,4 @@ BUILD: 8.0.1-84-gaf6307bc683
 bootstrap: 8.0.1-82-gfd540bccdc8
 system: 42920
 date: Tue Feb  4 09:06:35 PM CET 2025
-tasks: build[incomplete]
+tasks: build install[incomplete]
