@@ -2,4 +2,4 @@ BUILD: 8.1.1rc1
 bootstrap: 8.1.0rc4
 system: 43080
 date: Fri Mar  7 07:06:31 AM CET 2025
-tasks: build[incomplete]
+tasks: build install[incomplete]
